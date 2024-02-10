@@ -303,6 +303,23 @@ footer a {
 
 @media screen and (max-width: 768px) {
     main {
+        width: 100%;
+    }
+
+    main .content {
+        width: 100%;
+    }
+    
+    header.nav-container {
+        flex-direction: column;
+    }
+
+    header.nav-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main {
         padding: 1rem 3rem;
     }
 
@@ -315,6 +332,11 @@ footer a {
         margin-top: 2rem;
     }
 
+    main .content article#Home .content-image img {
+        width: 50px;;
+    }
+   
+
     main .content article#Home .content-myname {
         margin-top: 1.5rem;
         text-align: center;
@@ -323,5 +345,13 @@ footer a {
     main aside .contact ul {
         padding:1rem 1rem;
     }
+
+    main aside {
+        position: fixed;
+        inset-block: 0;
+        right: 0; /* Adjusted */
+        z-index: 1; /* Lower z-index */
+    }
+    
 
 }
