@@ -157,8 +157,8 @@ main .content article#Home .content-image {
 }
 
 main .content article#Home .content-image img {
-    width: 500px;
-    min-width: 450px;
+    width: 400px;
+    min-width: 250px;
     margin: auto;
 }
 
@@ -211,6 +211,8 @@ main .content article#Project .project-list .project-card {
 
 main .content article#Project .project-list .project-card img {
     width: 300px;
+    min-width: 200px;
+    margin: auto;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -239,13 +241,14 @@ main .content article#Certificates .list {
 
 main .content article#Certificates .list .certificates-card {
     text-align: center;
-    margin: 1.5rem;
+    margin-top: 1.5rem;
     font-size: 1rem;
     flex: 1 1;
 }
 
 main .content article#Certificates .list .certificates-card img {
-    width: 400px;
+    max-width: 300px;
+    min-width: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -328,14 +331,17 @@ footer a {
     }
 
     main .content article#Home .content-image {
+        flex: 1;
         order: -1;
-        margin-top: 2rem;
+        display: flex;
+        justify-content: center; 
+        overflow: hidden; 
     }
-
+    
     main .content article#Home .content-image img {
-        width: 50px;;
+        max-width: 80%; 
+        height: auto;
     }
-   
 
     main .content article#Home .content-myname {
         margin-top: 1.5rem;
@@ -352,6 +358,15 @@ footer a {
         right: 0; /* Adjusted */
         z-index: 1; /* Lower z-index */
     }
-    
-
 }
+
+@media screen and (max-width: 450px) {
+    html {
+      font-size: 75%;
+    }
+
+    main .content {
+        width: 100%;
+    }
+
+  }
