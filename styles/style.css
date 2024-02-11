@@ -27,7 +27,9 @@ header.nav-container {
     width: 100%;
     padding: 1rem 6%;
     margin-inline: auto;
-    
+
+    position: fixed;
+    background-color: #0B2447;
 
     display: flex;
     justify-content: space-between;
@@ -96,6 +98,7 @@ header.nav-container .nav-list li a:hover::after {
 main {
     flex: 1;
 
+    margin-top: 5rem;
     width: 100%;
     max-width: 1200px;
     margin-inline: auto;
@@ -311,10 +314,6 @@ footer a {
 
 
 @media screen and (max-width: 768px) {
-    header.nav-container {
-        position: relative;
-    }
-
     #hamburger-menu {
         display: inline-block;
         color: #576CBC;
